@@ -10,7 +10,3 @@ COPY ./products ./products
 COPY --from=builder /usr/src/app/product-catalog product-catalog
 ENV PRODUCT_CATALOG_PORT 8899
 ENTRYPOINT ["./product-catalog"]
-
-
-
-

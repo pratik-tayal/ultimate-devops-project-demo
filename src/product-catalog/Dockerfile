@@ -12,4 +12,4 @@ ENV PRODUCT_CATALOG_PORT 8899
 ENTRYPOINT ["./product-catalog"]
 
 
-#added comment for CI testing
+#added comment for CI testing and retesting 

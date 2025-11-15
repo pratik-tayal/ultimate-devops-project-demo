@@ -815,7 +815,7 @@ spec:
             - name: APP_ENV
               value: production
             - name: OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
-              value: http://$(OTEL_COLLECTOR_NAME):4318/v1/traces
+              value: http://$(OTEL_COLLECTOR_NAME):4318/apps/v1/traces
             - name: OTEL_RESOURCE_ATTRIBUTES
               value: service.name=$(OTEL_SERVICE_NAME),service.namespace=opentelemetry-demo,service.version=1.12.0
           resources:
@@ -1082,7 +1082,7 @@ spec:
             - name: WEB_OTEL_SERVICE_NAME
               value: frontend-web
             - name: PUBLIC_OTEL_EXPORTER_OTLP_TRACES_ENDPOINT
-              value: http://localhost:8080/otlp-http/v1/traces
+              value: http://localhost:8080/otlp-http/apps/v1/traces
             - name: OTEL_RESOURCE_ATTRIBUTES
               value: service.name=$(OTEL_SERVICE_NAME),service.namespace=opentelemetry-demo,service.version=1.12.0
           resources:

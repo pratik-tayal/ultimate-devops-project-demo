@@ -12,3 +12,5 @@ ENV PRODUCT_CATALOG_PORT 8899
 ENTRYPOINT ["./product-catalog"]
 
 
+
+

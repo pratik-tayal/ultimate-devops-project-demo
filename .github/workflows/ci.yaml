@@ -61,7 +61,7 @@ jobs:
           password: ${{ secrets.DOCKER_TOKEN }}
 
       - name: Docker Build and Push
-        run: docker/build-push-action@v4
+        uses: docker/build-push-action@v4
         with:
           context: src/product-catalog/
           file: Dockerfile

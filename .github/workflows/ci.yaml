@@ -76,7 +76,7 @@ jobs:
         - name: Checkout code
           uses: actions/checkout@v4
           with:
-            token: ${{ secretes.TOKEN}}
+            token: ${{ secrets.TOKEN}}
 
         - name: Update tag in Kubernetes deployment file
           run: | 
